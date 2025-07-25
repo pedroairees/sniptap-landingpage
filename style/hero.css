@@ -4,6 +4,10 @@ section.hero {
     padding: 2.5rem 2rem;
     margin-inline: auto;
 
+    & h1 {
+        max-width: 40rem;
+    }
+
     & h1 div {
         display: inline-block;
         overflow: hidden;
