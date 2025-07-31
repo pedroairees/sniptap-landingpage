@@ -105,3 +105,31 @@ section.galerry {
         transform: translateY(100%);
     }
 }
+
+@media (width <= 61.25rem) {
+    section.galerry {
+        & .content {
+            grid-template-areas: 
+            "A"
+            "B"
+            "C"
+            "D";
+            gap: 1.5rem;
+        }
+
+        & figure {
+            & > img {
+                height: 16rem;
+            }
+        }
+
+        & header span {
+            font-size: .75rem
+        }
+
+        & header h2 {
+            font-size: 1.5rem;
+            margin-block: .5rem 1.5rem;
+        }
+    }
+}
