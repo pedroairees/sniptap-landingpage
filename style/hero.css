@@ -203,6 +203,7 @@ section.hero {
 @media (width <= 61.25rem) {
     section.hero {
         flex-direction: column-reverse;
+        max-width: 22.5rem;
 
         & .buttons {
             flex-direction: column-reverse;
@@ -214,6 +215,24 @@ section.hero {
 
         & h1 div {
             height: 2.5rem;
+        }
+
+        & > div:nth-child(2) {
+            max-width: 19.5rem;
+            height: 19.5rem;
+            margin-bottom: 2rem;
+
+            & img[src*="stars-1"] {
+                max-width: 3.5rem;
+                top: 5.875rem;
+                left: .3125rem;
+            }
+
+            & img[src*="stars-2"] {
+                max-width: 1.5625rem;
+                top: 10.75rem;
+                right: .0625rem
+            }
         }
     }
 
